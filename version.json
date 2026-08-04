@@ -1,10 +1,8 @@
 {
   "firmware": {
-    "date": 20260815,
-    "link": "https://githubusercontent.com"
+    "date": 20260815
   },
   "littlefs": {
-    "date": 20260815,
-    "link": "https://githubusercontent.com"
+    "date": 20260815
   }
 }
