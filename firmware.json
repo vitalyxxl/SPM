@@ -1,10 +1,10 @@
 {
   "firmware": {
-    "version": "1.0.1",
+    "date": 20260801,
     "link": "https://githubusercontent.com"
   },
   "littlefs": {
-    "version": "1.0.1",
+    "date": 20260804,
     "link": "https://githubusercontent.com"
   }
 }
