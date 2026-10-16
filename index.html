@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Smart PowerMeter (ESP32) — Установка программного обеспечения</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; background: #0f172a; color: #f8fafc; }
+        h1 { color: #38bdf8; }
+        a { color: #38bdf8; }
+        esp-web-install-button { margin-top: 20px; }
+        .note { color: #94a3b8; font-size: 0.9rem; }
+        button[slot="activate"] {
+            background: #0284c7; color: #fff; border: none; border-radius: 8px;
+            padding: 12px 24px; font-size: 1rem; font-weight: 600; cursor: pointer;
+        }
+        button[slot="activate"]:hover { background: #0369a1; }
+    </style>
+</head>
+<body>
+    <h1>Smart PowerMeter (ESP32)</h1>
+    <p>Установка программного обеспечения электросчётчика. Подключите устройство (ESP32) по USB и нажмите кнопку ниже.</p>
+    <p class="note"><b>Внимание:</b> требуется Chrome, Edge или Opera (WebSerial).</p>
+
+    <esp-web-install-button manifest="manifest.json">
+        <button slot="activate">Прошить устройство</button>
+        <span slot="unsupported">Ваш браузер не поддерживает WebSerial. Используйте Chrome/Edge/Opera.</span>
+        <span slot="not-allowed">Разрешите доступ к последовательному порту.</span>
+    </esp-web-install-button>
+
+    <p class="note" style="margin-top: 40px;">
+        После прошивки откройте <a href="http://spm.local/">http://spm.local/</a> или IP-адрес устройства в локальной сети.
+    </p>
+</body>
+</html>
